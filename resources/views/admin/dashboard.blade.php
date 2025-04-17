@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css'])
 
     {{-- STYLE --}}
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">

@@ -14,14 +14,14 @@ class AuthController extends Controller
 
     public function login(Request $request)
     {
-        $username = $request->username;
-        $password = $request->password;
-
+        $username = $request->input('username');
+        $password = $request->input('password');
+    
         if ($username === 'admin' && $password === 'admin123') {
             session(['admin_logged_in' => true]);
             return redirect()->route('admin.dashboard');
         }
-
-        return back()->with('error', 'Username atau password salah!');
-    }
+    
+        return redirect()->route('admin.login')->with('error', 'Username atau password salah.');
+    }    
 }
