@@ -8,8 +8,9 @@
 </head>
 <body class="scroll-smooth">
 
-    {{-- Navbar --}}
-    @include('user.components.navbar')
+    {{-- NAVBAR --}}
+    <x-user-navbar/>
+
 
     {{-- Hero Section --}}
 <section id="hero" class="min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-20 bg-[#fffceb]">
@@ -136,7 +137,8 @@
 </script>
 
     {{-- Footer --}}
-    @include('user.components.footer')
+    <x-user-footer/>
+
 
 
 </body>
